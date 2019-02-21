@@ -1,304 +1,414 @@
-.avatar {
-	text-align: center;
-	position: relative;
-	top: 10px;
-	}
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
 
-
-.menu{
-text-align: center;
-font-size: 20px;
-font-family: Verdana;
-font-style: italic;
-background-image:url(81221d1.jpg);
-position: fixed;
-width:100%;
-z-index: 100;
-top: 0px;
-
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
 }
 
-#AAA{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: left;
-	color: black;
-	background: linear-gradient(to left, GreenYellow, DeepSkyBlue);
+body,
+html {
+   width: 100%;
+   height: 100%;
 }
 
-#AAB{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: left;
-	color: black;
-	background: linear-gradient(to left, PeachPuff, Thistle);
+body {
+   background-color: #fafafa;
+   font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+   width: 100%;
+   padding: 10px 0.5% 0px 0.5%;
+   background: transparent;
+   float: left;
+   position: fixed;
+}
+
+header #logo {
+   color: #fff;
+   cursor: pointer;
+}
+
+header #logo span {
+   font-size: 1.7em;
+   line-height: 45px;
+   margin-left: 40px;
+   font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+   #logo {
+      float: left;
+      width: 30%;
+      font-size: 1.1em;
+   }
+
+   #about {
+      float: right;
+      width: 67%;
+   }
+}
+
+@media (max-width: 700px) {
+   #logo {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 1.5em;
+   }
+
+   #about {
+      float: left;
+      width: 100%;
+   }
+}
+
+#about {
+   text-align: center;
+   font-size: 1em;
+   line-height: 40px;
+   margin-bottom: 10px;
+}
+
+#about>a {
+   color: #fff
+}
+
+#about>a:hover {
+   color: #b0b0b0;
+   text-decoration: underline;
+}
+
+#about>a:not(:last-child) {
+   margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+   z-index: 5000;
+   background-color: #fff;
+   border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+   color: #343434;
+}
+
+.fixed #about a {
+   color: #343434
+}
+
+.fixed #about a:hover {
+   color: #7c7c7c
+}
+
+/* Главный блок на сайте */
+
+#top {
+   width: 100%;
+   background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
+   background-blend-mode: multiply;
+   background-color: #2e3a44;
+   background-size: cover;
+   text-align: center;
+   color: #fff;
+}
+
+@media (min-width: 1001px) {
+   #top {
+      font-size: 3em;
+      height: 1000px;
+   }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+   #top {
+      font-size: 2em;
+      height: 600px;
+   }
+}
+
+@media (max-width: 650px) {
+   #top {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+   }
+}
+
+@media (max-width: 450px) {
+   #top {
+      font-size: 0.9em;
+   }
+}
+
+#top h1 {
+   padding-top: 20%;
+}
+
+#top h3 {
+   color: #ccc;
+}
+
+/* Блок с возможностями */
+
+#main {
+   float: left;
+   background-color: #f6f6f6;
+   border-top: 2px solid silver;
+   color: #484848;
+   font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+   #main {
+      padding: 100px 20%;
+      width: 60%;
+   }
+}
+
+@media (max-width: 1400px) {
+   #main {
+      padding: 100px 10%;
+      width: 80%;
+   }
+}
+
+@media (max-width: 700px) {
+   #main div {
+      width: 98% !important;
+      margin-bottom: 20px;
+   }
+}
+
+#main div {
+   width: 48%;
+   margin-right: 2%;
+   float: left;
+   margin-bottom: 100px;
+}
+
+#main h2 {
+   margin-bottom: 5px;
+   font-size: 3em
 }
 
 
-#AAC{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: left;
-	color: black;
+#main span {
+   color: #a0a0a0
+}
+#main a {
+   color: #a0a0a0
 }
 
-.menu>a{
+/* Блок с преимуществами */
 
-text-decoration: none;
-color: white;
-}	
-	
-	
-#main_1>a{
-text-decoration: none;
-color: black;
+#overview {
+   float: left;
+   background-image: url(https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&s=d055e15d0b8fd2de7295b726274d312b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+
+   background-blend-mode: multiply;
+   background-color: #403f40;
+   background-size: cover;
+   background-attachment: fixed;
+
+   padding: 100px 0;
+   width: 100%;
+   text-align: center;
+   color: #fff;
 }
 
-#main_1>a:hover { 
-					text-decoration: underline;  
-					color: green;
-			}
-
-#main_1{
-	text-decoration: none;
-	background-color: BlanchedAlmond;
-	border: 5px solid DarkSlateGray;
-	width: 50%;
-	height: auto;
-	margin: -105px auto 10px;	
-	text-align: center;
-	background-clip:content-box;
-	position: relative;
-	padding-top: 100px;
-	border-top: none;
-	border-bottom: none;
+#overview h2 {
+   font-size: 4em
 }
 
-#main_2>a{
-text-decoration: none;
-color: black;
+#overview h4 {
+   color: #ccc;
+   font-size: 1.5em
 }
 
-#main_2>a:hover { 
-					text-decoration: underline;  
-					color: green;
-			}
-
-#main_2{
-	text-decoration: none;
-	background-color: BlanchedAlmond;
-	border: 5px solid DarkSlateGray;
-	width: 50%;
-	height: auto;
-	margin: -20px auto;
-	text-align: center;
-}	
-
-#main_3>a{
-text-decoration: none;
-color: black;
+@media (min-width: 561px) {
+   #overview h2 {
+      font-size: 4em
+   }
 }
 
-#main_3>a:hover { 
-					text-decoration: underline;  
-					color: green;
-			}
-
-#main_3{
-	text-decoration: none;
-	background-color: BlanchedAlmond;
-	border: 5px solid DarkSlateGray;
-	width: 50%;
-	height: auto;
-	margin: -10px auto;
-	text-align: center;
-}	
-
-#main_4>a{
-text-decoration: none;
-color: black;
+@media (max-width: 560px) {
+   #overview h2 {
+      font-size: 2em
+   }
 }
 
-#main_4>a:hover { 
-					text-decoration: underline;  
-					color: green;
-			}
-
-#main_4{
-	text-decoration: none;
-	background-color: BlanchedAlmond;
-	border: 5px solid DarkSlateGray;
-	width: 50%;
-	height: auto;
-	margin: -10px auto;
-	text-align: center;
-}	
-
-
-.begin{
-	color: black;
-	border: 5px solid DarkSlateGray;
-	font-size: 30px;
-	font-weight: bold;
-	font-style: italic;
-	text-align: center;
-	font-family: Consolas;
-	box-shadow: 0px 0px 25px black;
-	background: linear-gradient(to top left, LightBlue, LightSteelBlue);
-	width: 50%;
-	height: auto;
-	margin: 100px auto 5px;
-	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+#overview .img {
+   float: left;
+   width: 30%;
+   margin-right: 5%;
+   margin-top: 50px;
 }
 
-.begin:hover{
-color: green;
-transition-duration:2s;	 
- }
-
-.gradient{
-background:linear-gradient(to top left, White, LightBlue);
-
+#overview .img:nth-child(odd) {
+   margin-left: 18%;
 }
 
-.lab1{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: left; 
+#overview img {
+   background: #fafafa;
+   padding: 5px;
+   border: 2px solid silver;
+   float: left;
+   width: 100%;
+   max-width: 500px;
 }
 
-.lab{
-	font-size: 20px;
-	font-weight: normal;
-	text-align: justify; 
+#overview span {
+   float: left;
+   width: 100%;
+   font-size: 2em;
+   margin-top: 10px;
 }
 
-	
-#main_1>.lab>ol>.knopka{
- font-family: Haettenschweiler;
- font-size: 20px;
- position: relative;
- left: 710px;
- right: 0px;
- bottom: 0px;
- height: 30px;
- border-color: black;
- border-style: solid;
- border-width: 1px;
- border-radius: 5px;
- background: MediumAquamarine;
- cursor: pointer;
- }
- 
- #main_1>.lab>ol>.knopka:active
- {
- background: Violet;
- border-color: black;
- border-style: solid;
- border-width: 1px; 
- }
- 
- #main_2>.lab>ol>.knopka{
- font-family: Haettenschweiler;
- font-size: 20px;
- position: relative;
- left: 710px;
- right: 0px;
- bottom: -5px;
- height: 30px;
- border-color: black;
- border-style: solid;
- border-width: 1px;
- border-radius: 5px;
- background: MediumAquamarine;
- cursor: pointer;
- }
- #main_2>.lab>ol>.knopka:active
- {
- background: Violet;
- border-color: black;
- border-style: solid;
- border-width: 1px; 
- }
- 
- 
- #main_3>.lab>ul>.knopka{
- font-family: Haettenschweiler;
- font-size: 20px;
- position: relative;
- left: 710px;
- right: 0px;
- bottom: -15px;
- height: 30px;
- border-color: black;
- border-style: solid;
- border-width: 1px;
- border-radius: 5px;
- background: MediumAquamarine;
- cursor: pointer;
- }
- #main_3>.lab>ul>.knopka:active
- {
- background: Violet;
- border-color: black;
- border-style: solid;
- border-width: 1px; 
- }
-
- 
- 
- #digital_watch{
- position: relative;
- text-align: right;
- font-size: 30px;
- font-weight: bold;
- top: 120px;
- z-index: 10000;
- }
- 
-#digital_watch:hover{
-color: red;
-transition-duration:2s;	 
- }
- 
- #digital_watch:after{
-	 transition-duration:2s;
- }
- 
- 
-.Vopros {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#700;
-	font-size:20px;
-	text-shadow: 1px 1px 0px #fff;
-	background:#eaebec;
-	margin: 10px 10px 10px 10px;
-	padding: 100px;
-	border:#ccc 1px solid;
-	border-collapse:separate;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	-moz-box-shadow: 0 1px 2px #d1d1d1;
-	-webkit-box-shadow: 0 1px 2px #d1d1d1;
-	box-shadow: 0 1px 2px #d1d1d1;
+@media (max-width: 700px) {
+   #overview .img {
+      width: 80% !important;
+      margin-right: 0 !important;
+      margin-left: 10% !important;
+   }
 }
 
- #main_4>.lab>.knopka{
- font-family: Haettenschweiler;
- font-size: 20px;
- position: relative;
- border-color: black;
- border-style: solid;
- border-width: 1px;
- border-radius: 5px;
- background: MediumAquamarine;
- cursor: pointer;
- }
- #main_4>.lab>.knopka:active
- {
- background: Violet;
- border-color: black;
- border-style: solid;
- border-width: 1px; 
+/* Блок с контактами */
+#contacts {
+   width: 100%;
+   float: left;
+   padding-bottom: 40px;
+   padding-top: 70px;
+   border-top: 4px solid #ccc;
+   background: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: 'Roboto Slab', serif;
+   font-weight: lighter;
+}
+
+#contacts h5 {
+   font-size: 3em;
+   color: #4f4f4f
+}
+
+#form_input {
+   margin-top: 15px;
+   font-size: 1.1em;
+}
+
+@media (min-width: 1051px) {
+   #form_input {
+      width: 35%;
+      margin-left: 38%;
+   }
+}
+
+@media (max-width: 1050px) {
+   #form_input {
+      width: 90%;
+      margin-left: 10%;
+   }
+}
+
+#form_input label {
+   color: #505050;
+   cursor: pointer;
+   font-size: 1.4em;
+   font-family: 'Roboto Slab', serif;
+}
+
+#form_input label>span {
+   color: #e87e7e;
+}
+
+#form_input input,
+#form_input textarea {
+   margin-bottom: 10px;
+   width: 70%;
+   padding: 10px 2%;
+   border-radius: 7px;
+   border: 2px solid silver;
+   font-size: 0.9em;
+   color: #4a4a4a;
+}
+
+#form_input input:focus,
+#form_input textarea:focus {
+   border-color: #333;
+}
+
+.btn {
+   float: left;
+   border-radius: 5px;
+   padding: 5px 9px;
+   font-size: 1.2em;
+   background-color: #ec6550;
+   text-shadow: #454545 0 0 2px;
+   cursor: pointer;
+   color: white;
+   font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+   background-color: #c15443;
+}
+
+/* Вопросы и ответы */
+
+#faq {
+   background-color: #fff;
+   border-top: 2px dashed #e4e3e3;
+   width: 100%;
+   float: left;
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+   #faq div {
+      width: 25%;
+      margin-left: 6%;
+      float: left;
+   }
+}
+
+@media (max-width: 800px) {
+   #faq div {
+      width: 80%;
+      margin-left: 10%;
+      float: left;
+     
+   }
+}
+
+#faq .title {
+   font-weight: lighter;
+   color: #a3a0ad;
+   margin-bottom: 100px;
+   font-size: 2.1em;
+}
+
+#faq .heading {
+   color: #7d7d7d;
+   font-size: 1.3em;
+   font-weight: bold;
+   
+}
+
+#faq p {
+   font-family: Arimo, Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   color: #4a4a4a;
+   font-size: 0.95em;
+   margin-bottom: 40px;
 }
