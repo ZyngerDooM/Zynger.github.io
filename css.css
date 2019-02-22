@@ -366,7 +366,7 @@ h5 {
 /* Вопросы и ответы */
 
 #faq {
-   background-color: #fff;
+   background-color: rgb(150, 164, 245);
    border-top: 2px dashed #e4e3e3;
    width: 100%;
    float: left;
